@@ -1,0 +1,28 @@
+{
+  "name": "prueba-existaya",
+  "version": "1.0.0",
+  "description": "Prueba Front existaya",
+  "scripts": {
+    "compile_pug": "gulp compilePug",
+    "compile_sass": "gulp compileStyles",
+    "watch_sass": "gulp watchStyles",
+    "watch_pug": "gulp watchPug",
+    "watch_js": "gulp watchJs",
+    "serve": "http-server ./build"
+  },
+  "keywords": [
+    "Front end",
+    "prueba"
+  ],
+  "author": "Oscar Larrotta",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-uglify": "^3.0.2",
+    "pug": "^3.0.2",
+    "sass": "^1.39.0",
+    "serve": "^12.0.0"
+  }
+}
