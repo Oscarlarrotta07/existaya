@@ -1,1 +1,8 @@
-@import "components/hero";
+@import "components/mixins", "components/variables", "components/bar",
+  "components/hero", "components/icon";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
