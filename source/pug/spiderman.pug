@@ -2,11 +2,11 @@ include components/_meta
 
 +meta() 
 body 
- +hero(data.superheros[0], data.menu)
+ +hero(data.superheros[4], data.menu)
  h2.title Super Heroes anteriores
  .cards
   each superhero in data.superheros
-   if superhero.name != "Ironman"
+   if superhero.name != "spiderman"
     +card(superhero)
  +scripts() 
  
