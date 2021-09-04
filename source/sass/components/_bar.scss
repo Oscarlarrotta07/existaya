@@ -7,9 +7,7 @@
   height: 60px;
 
   &__porcentage {
-    width: 50%;
     position: relative;
-    padding: size();
   }
 
   &__like {
@@ -27,24 +25,13 @@
     top: 50%;
     transform: translateY(-50%);
     padding: 0 size(2);
-    &::after {
-      content: "%";
-    }
 
     &Like {
       right: 0;
-
-      &::before {
-        content: "bien";
-      }
     }
 
     &Dislike {
       left: 0;
-
-      &::after {
-        content: "mal";
-      }
     }
   }
 }

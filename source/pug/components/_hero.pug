@@ -1,22 +1,23 @@
-mixin hero(data)
- .hero
-  nav.hero__navigation 
-   img(src=data.mainicon, alt="icono heroes").hero__icon 
-   .hero__options 
-    each option in data.options
-     a.hero__option=option
+mixin hero(hero, menu)
+ .hero(data-name=hero.name)
+  nav.hero__navigation
+   img(src="/images/logo.png", alt="icono heroes").hero__icon
+   .hero__options
+    each option in menu.options
+     a.hero__option(href=option.link)=option.text
     img(src="/images/.png", alt="").hero__iconSearch
-  .hero__vote 
-   .hero__voteinfo 
-    p.hero__voteOpinion=data.opinion
-    h2.hero__voteTitle=data.title
-    p.hero__voteText=data.text
-    a.hero__voteLink=data.link
-    h3.hero__voteQuestion=data.question
+  .hero__vote
+   .hero__voteinfo
+    p.hero__voteOpinion Dinos tu opinion sobre
+    h2.hero__voteTitle=hero.name
+      span ?
+    p.hero__voteText=hero.text
+    a.hero__voteLink(href=hero.link)=hero.linkText
+    h3.hero__voteQuestion ¿Cuál es su voto?
    .hero__buttons
      button.hero__button.hero__buttonLike
       img.hero__icon(src="/images/icons/like.svg", alt="")
-     button.hero__button.hero__buttonDislike 
+     button.hero__button.hero__buttonDislike
       img.hero__icon(src="/images/icons/dislike.svg", alt="")
-     
+
   +bar()

@@ -7,9 +7,7 @@
   height: 60px;
 }
 .bar__porcentage {
-  width: 50%;
   position: relative;
-  padding: 8px;
 }
 .bar__like {
   background-color: rgba(0, 174, 165, 0.6);
@@ -25,20 +23,11 @@
   transform: translateY(-50%);
   padding: 0 16px;
 }
-.bar__number::after {
-  content: "%";
-}
 .bar__numberLike {
   right: 0;
 }
-.bar__numberLike::before {
-  content: "bien";
-}
 .bar__numberDislike {
   left: 0;
-}
-.bar__numberDislike::after {
-  content: "mal";
 }
 
 .hero {
