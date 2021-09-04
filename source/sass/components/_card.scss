@@ -1,0 +1,43 @@
+.card {
+  display: flex;
+  position: relative;
+  width: 50%;
+  color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+  }
+
+  &__image {
+    height: 30px;
+    width: 30px;
+  }
+
+  &__title {
+    font-size: size(5.5);
+  }
+
+  &__description {
+    font-size: size(2);
+    width: 80%;
+  }
+
+  &__link {
+    font-size: size(1.7);
+  }
+
+  &__text {
+    font-size: size(1.5);
+    font-weight: bold;
+    width: 60%;
+  }
+
+  &__cta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: size(5);
+  }
+}

@@ -7,7 +7,7 @@
   height: 60px;
 }
 .bar__porcentage {
-  position: relative;
+  padding: 0 12px;
 }
 .bar__like {
   background-color: rgba(0, 174, 165, 0.6);
@@ -18,16 +18,9 @@
 .bar__number {
   font-size: 48px;
   color: #ffffff;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 0 16px;
 }
 .bar__numberLike {
-  right: 0;
-}
-.bar__numberDislike {
-  left: 0;
+  text-align: end;
 }
 
 .hero {
@@ -93,6 +86,43 @@
 
 .icon__ico {
   width: 100%;
+}
+
+.card {
+  display: flex;
+  position: relative;
+  width: 50%;
+  color: #ffffff;
+  background-size: cover;
+  background-repeat: no-repeat;
+  flex-direction: column;
+}
+.card__header {
+  display: flex;
+}
+.card__image {
+  height: 30px;
+  width: 30px;
+}
+.card__title {
+  font-size: 44px;
+}
+.card__description {
+  font-size: 16px;
+  width: 80%;
+}
+.card__link {
+  font-size: 13.6px;
+}
+.card__text {
+  font-size: 12px;
+  font-weight: bold;
+  width: 60%;
+}
+.card__cta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
 }
 
 * {

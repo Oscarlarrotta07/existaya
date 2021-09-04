@@ -21,7 +21,8 @@
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
       "linkText": "Más informacion",
       "link": "/",
-      "background": "/images/ironman.png"
+      "background": "/images/ironman.png",
+      "info": "1 mes atrás en lorem dolor"
     }
   ]
 }
