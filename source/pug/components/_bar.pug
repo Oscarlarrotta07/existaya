@@ -1,6 +1,6 @@
 mixin bar(likes=50, dislikes=50)
  .bar 
   .bar__porcentage.bar__like(style="width:" + likes +"%") 
-   p.bar__number.bar__numberLike=likes
+   p.bar__number.bar__numberLike=likes +"%"
   .bar__porcentage.bar__dislike(style="width:" + dislikes +"%")
-   p.bar__number.bar__numberDislike=dislike
+   p.bar__number.bar__numberDislike=dislikes +"%"

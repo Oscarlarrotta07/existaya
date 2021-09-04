@@ -22,7 +22,7 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/ironman.png",
-      "info": "1 mes atrás en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor"
     }
   ]
 }

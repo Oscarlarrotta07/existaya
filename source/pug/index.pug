@@ -3,6 +3,8 @@ include components/_meta
 +meta() 
 body 
  +hero(data.superheros[0], data.menu)
- +card(data.superheros[0])
+ .cards
+  each card in ["0", "1", "2", "3"]
+   +card(data.superheros[0])
  +scripts() 
  

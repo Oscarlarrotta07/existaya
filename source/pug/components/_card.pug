@@ -6,6 +6,7 @@ mixin card(data)
    h2.card__title=data.name
   p.card__description=data.text
   .card__cta
-   a.card__link(href=data.link)=data.linkText
-   p.card__text=data.info 
-  //- +bar() 
+   a.link(href=data.link)=data.linkText
+   p.card__text
+     |!{data.info} 
+  +bar() 

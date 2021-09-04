@@ -1,7 +1,7 @@
 mixin hero(hero, menu)
  .hero(data-name=hero.name)
   nav.hero__navigation
-   img(src="/images/logo.png", alt="icono heroes").hero__icon
+   img.hero__icon(src="/images/logo.png", alt="icono heroes")
    .hero__options
     each option in menu.options
      a.hero__option(href=option.link)=option.text
