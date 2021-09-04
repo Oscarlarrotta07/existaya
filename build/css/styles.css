@@ -35,6 +35,16 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 72px;
+  color: #ffffff;
+}
+.hero__option {
+  color: #ffffff;
+  font-size: 1rem;
+  padding: 8px 24px;
+  text-decoration: none;
+}
+.hero__iconSearch {
+  padding: 0 32px;
 }
 .hero__vote {
   width: 50%;
@@ -79,7 +89,7 @@
 .hero__buttonDislike {
   background-color: #ffa300;
 }
-.hero__icon {
+.hero__logo {
   width: 20%;
 }
 
@@ -92,7 +102,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 50%;
+  width: calc(50% - 20px);
   color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
@@ -162,7 +172,15 @@ body {
 
 .cards {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   padding: 0 120px;
+  gap: 40px;
+}
+
+.title {
+  color: #000000;
+  font-size: 2.5rem;
+  padding: 64px 120px;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
 }

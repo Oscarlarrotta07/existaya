@@ -1,11 +1,11 @@
 mixin hero(hero, menu)
  .hero(data-name=hero.name)
   nav.hero__navigation
-   img.hero__icon(src="/images/logo.png", alt="icono heroes")
+   img.hero__logo(src="/images/logo.png", alt="icono heroes")
    .hero__options
     each option in menu.options
-     a.hero__option(href=option.link)=option.text
-    img(src="/images/.png", alt="").hero__iconSearch
+      a.hero__option(href=option.link)=option.text
+    img.hero__iconSearch.icon-search(src="/images/.png", alt="")
   .hero__vote
    .hero__voteinfo
     p.hero__voteOpinion Dinos tu opinion sobre

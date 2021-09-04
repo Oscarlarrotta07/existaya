@@ -13,7 +13,14 @@ body {
 
 .cards {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   padding: 0 size(15);
+  gap: size(5);
+}
+
+.title {
+  color: $black;
+  font-size: rem(40);
+  padding: size(8) size(15);
+  @include latoLight;
 }
