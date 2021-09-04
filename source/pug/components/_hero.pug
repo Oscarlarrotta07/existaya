@@ -5,19 +5,22 @@ mixin hero(hero, menu)
    .hero__options
     each option in menu.options
       a.hero__option(href=option.link)=option.text
-    img.hero__iconSearch.icon-search(src="/images/.png", alt="")
+    .hero__iconSearch.icon-search(src="/images/.png", alt="")
   .hero__vote
    .hero__voteinfo
     p.hero__voteOpinion Dinos tu opinion sobre
     h1.hero__voteTitle=hero.name
       span ?
     p.hero__voteText=hero.text
-    a.hero__voteLink(href=hero.link)=hero.linkText
+    a.hero__voteLink(href=hero.link)
+      span.icons.icon-wikipedia
+      =hero.linkText
     h3.hero__voteQuestion ¿Cuál es su voto?
    .hero__buttons
      button.hero__button.hero__buttonLike
-      img.hero__icon(src="/images/icons/like.svg", alt="")
+      .icons.icon-like
      button.hero__button.hero__buttonDislike
-      img.hero__icon(src="/images/icons/dislike.svg", alt="")
+      .icons.icon-dislike
+
 
   +bar()

@@ -5,7 +5,8 @@ body
  +hero(data.superheros[0], data.menu)
  h2.title Super Heroes anteriores
  .cards
-  each card in ["0", "1", "2", "3"]
-   +card(data.superheros[0])
+  each superhero in data.superheros
+   if superhero.name != "Ironman"
+    +card(superhero)
  +scripts() 
  

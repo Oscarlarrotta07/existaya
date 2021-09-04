@@ -24,3 +24,8 @@ body {
   padding: size(8) size(15);
   @include latoLight;
 }
+
+.icons {
+  font-size: size(5);
+  color: $white;
+}

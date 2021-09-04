@@ -24,7 +24,7 @@
 }
 
 .hero {
-  padding: 24px 120px;
+  padding: 24px 120px 120px;
   background-image: url("/images/ironman.png");
   position: relative;
   background-size: cover;
@@ -45,10 +45,10 @@
 }
 .hero__iconSearch {
   padding: 0 32px;
+  display: inline;
 }
 .hero__vote {
   width: 50%;
-  margin-bottom: 40px;
   color: #ffffff;
   backdrop-filter: blur(16px);
   background: rgba(0, 0, 0, 0.4);
@@ -68,6 +68,11 @@
   display: block;
   font-size: 0.875rem;
   margin-bottom: 16px;
+  color: #ffffff;
+}
+.hero__voteLink .icon-wikipedia {
+  font-size: inherit;
+  text-decoration: none;
 }
 .hero__voteQuestion {
   font-size: 1.25rem;
@@ -77,6 +82,7 @@
   justify-content: space-around;
 }
 .hero__button {
+  cursor: pointer;
   padding: 24px;
   width: 100%;
   display: block;
@@ -183,4 +189,9 @@ body {
   padding: 64px 120px;
   font-family: "lato", sans-serif;
   font-weight: 300;
+}
+
+.icons {
+  font-size: 40px;
+  color: #ffffff;
 }

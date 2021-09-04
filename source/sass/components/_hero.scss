@@ -1,5 +1,5 @@
 .hero {
-  padding: size(3) size(15);
+  padding: size(3) size(15) size(15);
   background-image: url("/images/ironman.png");
   position: relative;
   background-size: cover;
@@ -22,11 +22,11 @@
 
   &__iconSearch {
     padding: 0 size(4);
+    display: inline;
   }
 
   &__vote {
     width: 50%;
-    margin-bottom: size(5);
     color: $white;
     backdrop-filter: blur(size(2));
     background: rgba(0, 0, 0, 0.4);
@@ -50,6 +50,12 @@
     display: block;
     font-size: rem(14);
     margin-bottom: size(2);
+    color: $white;
+
+    .icon-wikipedia {
+      font-size: inherit;
+      text-decoration: none;
+    }
   }
 
   &__voteQuestion {
@@ -62,6 +68,7 @@
   }
 
   &__button {
+    cursor: pointer;
     padding: size(3);
     width: 100%;
     display: block;
