@@ -64,4 +64,9 @@
       background-color: $orange;
     }
   }
+
+  &__icon {
+    width: size(5);
+    height: size(5);
+  }
 }
