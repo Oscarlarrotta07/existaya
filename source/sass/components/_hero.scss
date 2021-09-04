@@ -1,3 +1,72 @@
 .hero {
-  background-color: red;
+  padding: size(3) size(15);
+  background-image: url("/images/ironman.png");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  &__navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: size(9);
+  }
+
+  &__vote {
+    width: 50%;
+    margin-bottom: size(5);
+    color: $white;
+    backdrop-filter: blur(size(2));
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  &__voteinfo {
+    padding: size(4) size(3);
+  }
+
+  &__voteTitle {
+    font-size: rem(60);
+    margin-bottom: size(3);
+  }
+
+  &__voteText {
+    font-size: rem(21);
+    margin-bottom: size(2);
+  }
+
+  &__voteLink {
+    display: block;
+    font-size: rem(14);
+    margin-bottom: size(2);
+  }
+
+  &__voteQuestion {
+    font-size: rem(20);
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__button {
+    padding: size(3);
+    width: 100%;
+    display: block;
+    appearance: none;
+    border: none;
+
+    &Like {
+      background-color: $green;
+    }
+
+    &Dislike {
+      background-color: $orange;
+    }
+  }
+
+  &__icon {
+    width: size(5);
+    height: size(5);
+  }
 }
