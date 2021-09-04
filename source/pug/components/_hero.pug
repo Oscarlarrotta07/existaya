@@ -1,2 +1,22 @@
-mixin hero()
+mixin hero(data)
  .hero
+  nav.hero__navigation 
+   img(src=data.mainicon, alt="icono heroes").hero__icon 
+   .hero__options 
+    each option in data.options
+     a.hero__option=option
+    img(src="/images/.png", alt="").hero__iconSearch
+  .hero__vote 
+   .hero__voteinfo 
+    p.hero__voteOpinion=data.opinion
+    h2.hero__voteTitle=data.title
+    p.hero__voteText=data.text
+    a.hero__voteLink=data.link
+    h3.hero__voteQuestion=data.question
+   .hero__buttons
+     button.hero__button.hero__buttonLike
+      img(src="/images/icons/like.svg", alt="")
+     button.hero__button.hero__buttonDislike 
+      img(src="/images/icons/dislike.svg", alt="")
+     
+  +bar()
