@@ -8,7 +8,8 @@
     "watch_sass": "gulp watchStyles",
     "watch_pug": "gulp watchPug",
     "watch_js": "gulp watchJs",
-    "serve": "http-server ./build"
+    "serve": "http-server ./build",
+    "dev": "concurrently \"npm run watch_pug\" \"npm run watch_sass\" \"npm run watch_js\" "
   },
   "keywords": [
     "Front end",
@@ -19,6 +20,7 @@
   "devDependencies": {
     "@babel/core": "^7.15.4",
     "@babel/preset-env": "^7.15.4",
+    "concurrently": "^6.2.1",
     "gulp": "^4.0.2",
     "gulp-babel": "^8.0.0",
     "gulp-pug": "^5.0.0",

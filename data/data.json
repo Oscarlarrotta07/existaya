@@ -1,10 +1,26 @@
 {
-  "mainicon": "/images/logo.png",
-  "options": ["Heroes anteriores", "¿Cómo funciona?", "Iniciar sesion"],
-  "opinion": "Dinos tu opinion sobre",
-  "title": "Ironman?",
-  "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
-  "link": "Más informacion",
-  "question": "¿Cuál es su voto?",
-  "heros": [{}]
+  "menu": {
+    "options": [
+      {
+        "text": "Heroes anteriores",
+        "link": "/"
+      },
+      {
+        "text": "¿Cómo funciona?",
+        "link": "/"
+      },
+      {
+        "text": "Iniciar sesion",
+        "link": "/"
+      }
+    ]
+  },
+  "superheros": [
+    {
+      "name": "Ironman",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "linkText": "Más informacion",
+      "link": "/"
+    }
+  ]
 }
