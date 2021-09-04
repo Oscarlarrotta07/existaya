@@ -2,6 +2,8 @@ const gulp = require("gulp");
 const pug = require("gulp-pug");
 const fs = require("fs");
 const sass = require("gulp-sass")(require("sass"));
+const babel = require("gulp-babel");
+const uglify = require("gulp-uglify");
 
 const files = ["data"];
 
@@ -30,9 +32,21 @@ function compileStyles() {
     .pipe(gulp.dest("./build/css"));
 }
 
+function compileJs() {
+  return gulp
+    .src("./source/js/main.js")
+    .pipe(
+      babel({
+        presets: ["@babel/env"],
+      })
+    )
+    .pipe(uglify())
+    .pipe(gulp.dest("./build/js"));
+}
+
 function watchPug() {
   gulp.watch(
-    ["source/pug/**/*.pug", "./data/*.json"],
+    ["source/pug/**/.pug", "./data/.json"],
     { ignoreInitial: false },
     compilePug
   );
@@ -46,7 +60,12 @@ function watchStyles() {
   );
 }
 
+function watchJs() {
+  gulp.watch(["source/js/main.js"], { ignoreInitial: false }, compileJs);
+}
+
 exports.compilePug = compilePug;
 exports.watchPug = watchPug;
 exports.compileStyles = compileStyles;
 exports.watchStyles = watchStyles;
+exports.watchJs = watchJs;
