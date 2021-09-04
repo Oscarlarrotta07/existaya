@@ -1,3 +1,109 @@
+.bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  height: 60px;
+}
+.bar__porcentage {
+  width: 50%;
+  position: relative;
+  padding: 8px;
+}
+.bar__like {
+  background-color: rgba(0, 174, 165, 0.6);
+}
+.bar__dislike {
+  background-color: rgba(255, 163, 0, 0.6);
+}
+.bar__number {
+  font-size: 48px;
+  color: #ffffff;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 0 16px;
+}
+.bar__number::after {
+  content: "%";
+}
+.bar__numberLike {
+  right: 0;
+}
+.bar__numberLike::before {
+  content: "bien";
+}
+.bar__numberDislike {
+  left: 0;
+}
+.bar__numberDislike::after {
+  content: "mal";
+}
+
 .hero {
-  background-color: red;
+  padding: 24px 120px;
+  background-image: url("/images/ironman.png");
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.hero__navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 72px;
+}
+.hero__vote {
+  width: 50%;
+  margin-bottom: 40px;
+  color: #ffffff;
+  backdrop-filter: blur(16px);
+  background: rgba(0, 0, 0, 0.4);
+}
+.hero__voteinfo {
+  padding: 32px 24px;
+}
+.hero__voteTitle {
+  font-size: 3.75rem;
+  margin-bottom: 24px;
+}
+.hero__voteText {
+  font-size: 1.3125rem;
+  margin-bottom: 16px;
+}
+.hero__voteLink {
+  display: block;
+  font-size: 0.875rem;
+  margin-bottom: 16px;
+}
+.hero__voteQuestion {
+  font-size: 1.25rem;
+}
+.hero__buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.hero__button {
+  padding: 24px;
+  width: 100%;
+  display: block;
+  appearance: none;
+  border: none;
+}
+.hero__buttonLike {
+  background-color: #00aea5;
+}
+.hero__buttonDislike {
+  background-color: #ffa300;
+}
+
+.icon__ico {
+  width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
