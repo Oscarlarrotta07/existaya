@@ -16,9 +16,9 @@
     align-items: center;
   }
 
-  &__image {
-    height: size(4);
-    width: size(4);
+  &__icon {
+    font-size: size(2);
+    padding: size();
   }
 
   &__title {

@@ -16,13 +16,14 @@ mixin hero(hero, menu)
         span.icons.icon-wikipedia 
         a.hero__voteLink(href=hero.link)=hero.linkText
       h3.hero__voteQuestion ¿Cuál es su voto?
-      .vote__like 
-        p.hero__likeName="Marvel -" + hero.name
-        .icons.icon-like
-        .icons.icon-dislike
-        h2.hero__likeRegister Tu voto ha sido registrado
-        p.hero__liketext=hero.text
-        button.hero__likeButton ver mas
+    .hero__voteLike 
+        p.hero__likeName="Marvel - " + hero.name
+        .hero__iconRegister
+          .icons.icon-like
+          .icons.icon-dislike
+          h2.hero__likeRegister Tu voto ha sido registrado
+        p.hero__likeText=hero.text
+        button.hero__likeButton Volver a votar
 
     .hero__buttons
       button.hero__button.hero__buttonLike

@@ -22,7 +22,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/ironman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "like"
     },
     {
       "name": "superman",
@@ -30,7 +31,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/superman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "like"
     },
     {
       "name": "thor",
@@ -38,7 +40,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/thor.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "dislike"
     },
     {
       "name": "batman",
@@ -46,7 +49,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/batman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "dislike"
     },
     {
       "name": "spiderman",
@@ -54,7 +58,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/spiderman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "like"
     }
   ],
   "footer": {

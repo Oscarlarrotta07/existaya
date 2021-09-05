@@ -31,6 +31,14 @@ body {
   color: $white;
 }
 
+.icon-like {
+  background-color: $green;
+}
+
+.icon-dislike {
+  background-color: $orange;
+}
+
 .padding {
   padding: 0 size(15);
 }

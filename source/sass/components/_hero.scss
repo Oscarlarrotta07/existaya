@@ -114,4 +114,59 @@
     width: 20%;
     z-index: 1;
   }
+
+  &__vote-like {
+    .hero__voteLike {
+      display: block;
+    }
+    .hero__voteinfo {
+      display: none;
+    }
+  }
+
+  &__voteLike {
+    display: none;
+    padding: size(4) size(3);
+    .icons {
+      padding: size(2);
+      margin-right: size();
+    }
+    .icon-like {
+      background-color: $green;
+    }
+    .icon-dislike {
+      display: none;
+    }
+  }
+
+  &__iconRegister {
+    display: flex;
+    align-items: center;
+    margin-bottom: size(2);
+  }
+
+  &__likeName {
+    padding-bottom: size(2);
+    font-size: rem(35);
+    @include latoLight;
+  }
+
+  &__likeRegister {
+    font-size: rem(30);
+    @include latoBold();
+  }
+
+  &__likeText {
+    width: 80%;
+    padding-bottom: size(3);
+  }
+
+  &__likeButton {
+    font-size: rem(14);
+    @include lato;
+    padding: size() size(3);
+    color: $white;
+    border: 1px solid $white;
+    background: transparent;
+  }
 }

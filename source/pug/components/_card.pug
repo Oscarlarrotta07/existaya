@@ -2,8 +2,8 @@ mixin card(data)
 
  .card(style="background-image:url("+ data.background + ")" data-name=data.name)
   .card__header
-   img.card__image(src="/images/icons/dislike.svg", alt="")
-   h2.card__title=data.name
+    .card__icon(class="icon-"+ data.icon)
+    h2.card__title=data.name
   p.card__description=data.text
   .card__cta
    a.link(href="/" + data.name + ".html")=data.linkText
