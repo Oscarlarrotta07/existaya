@@ -1,9 +1,9 @@
-mixin footer(links)
+mixin footer(data)
  footer.footer
   .footer__links 
-   each link in data.footer.links
+   each link in data.links
     a(href=link.link).footer__link=link.text
   .footer__social 
-   p.footer__followme Siguenos 
-   .icon-facebook-squared
-   .icon-twitter 
+    p.footer__followme Siguenos 
+    a(href=data.facebook).icon-facebook-squared
+    a(href=data.twitter).icon-twitter 

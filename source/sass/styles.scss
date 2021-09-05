@@ -1,6 +1,6 @@
 @import "components/mixins", "components/variables", "components/bar",
   "components/hero", "components/icon", "components/card", "components/link",
-  "components/footer";
+  "components/footer", "components/notification";
 
 * {
   margin: 0;
@@ -22,7 +22,7 @@ body {
 .title {
   color: $black;
   font-size: rem(40);
-  padding: size(8) 0;
+  padding: size(4) 0;
   @include latoLight;
 }
 

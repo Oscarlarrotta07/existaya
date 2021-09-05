@@ -1,0 +1,7 @@
+mixin notification(data)
+ .notification 
+  .notification__header
+   h3.notification__subtitle=data.subtitle 
+   h2.notification__title=data.title
+  p.notification__text=data.text
+  button.notification__button.icon-cancel

@@ -58,6 +58,8 @@
     }
   ],
   "footer": {
+    "facebook": "facebook.com",
+    "twitter": "twitter.com",
     "links": [
       {
         "text": "Terminos y condiciones",
@@ -71,16 +73,11 @@
         "text": "contactenos",
         "link": "/google.com"
       }
-    ],
-    "media": [
-      {
-        "name": "facebook",
-        "link": "facebook.com"
-      },
-      {
-        "name": "twitter",
-        "link": "twitter.com"
-      }
     ]
+  },
+  "notification": {
+    "subtitle": "lorem ipsum Dolor",
+    "title": "IP lorem ip. ",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla nisi. Suspendisse vel nulla non ipsum volutpat fermentum et a velit. Nullam nunc massa, ultricies sed purus viverra, congue tristique diam. "
   }
 }

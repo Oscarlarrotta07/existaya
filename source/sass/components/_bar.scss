@@ -6,6 +6,7 @@
   display: flex;
 
   &__percentage {
+    min-width: 10%;
     padding: size() size(2);
     transition: width 0.5s;
   }
