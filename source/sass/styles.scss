@@ -15,18 +15,22 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 size(15);
+  padding-bottom: size(9);
   gap: size(5);
 }
 
 .title {
   color: $black;
   font-size: rem(40);
-  padding: size(8) size(15);
+  padding: size(8) 0;
   @include latoLight;
 }
 
 .icons {
   font-size: size(5);
   color: $white;
+}
+
+.padding {
+  padding: 0 size(15);
 }

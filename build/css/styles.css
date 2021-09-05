@@ -31,12 +31,27 @@
   background-size: cover;
   background-repeat: no-repeat;
 }
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(rgba(104, 107, 112, 0.8), rgba(104, 107, 112, 0.3));
+  width: 100%;
+  height: 80px;
+}
 .hero__navigation {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 72px;
   color: #ffffff;
+}
+.hero__options {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  display: flex;
+  z-index: 1;
 }
 .hero__option {
   color: #ffffff;
@@ -45,8 +60,17 @@
   text-decoration: none;
 }
 .hero__iconSearch {
-  padding: 0 32px;
+  padding-left: 32px;
   display: inline;
+  font-size: 32px;
+}
+.hero .icon-wikipedia {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 8px;
+}
+.hero__votewiki {
+  display: flex;
 }
 .hero__vote {
   width: 50%;
@@ -66,14 +90,10 @@
   margin-bottom: 16px;
 }
 .hero__voteLink {
-  display: block;
   font-size: 0.875rem;
   margin-bottom: 16px;
   color: #ffffff;
-}
-.hero__voteLink .icon-wikipedia {
-  font-size: inherit;
-  text-decoration: none;
+  display: inline-block;
 }
 .hero__voteQuestion {
   font-size: 1.25rem;
@@ -98,6 +118,7 @@
 }
 .hero__logo {
   width: 20%;
+  z-index: 1;
 }
 
 .icon__ico {
@@ -168,8 +189,28 @@
 
 .footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  border-top: 1px;
+  border-top: dotted;
+  padding: 32px 0 160px;
+}
+.footer__links {
+  font-size: 0.75rem;
+}
+.footer__link {
+  color: #000000;
+  padding-right: 24px;
+  text-decoration: none;
+}
+.footer__social {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.footer__social .icon-facebook-squared,
+.footer__social .icon-twitter {
+  font-size: 24px;
+  padding-left: 24px;
 }
 
 * {
@@ -186,14 +227,14 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 120px;
+  padding-bottom: 72px;
   gap: 40px;
 }
 
 .title {
   color: #000000;
   font-size: 2.5rem;
-  padding: 64px 120px;
+  padding: 64px 0;
   font-family: "lato", sans-serif;
   font-weight: 300;
 }
@@ -201,4 +242,8 @@ body {
 .icons {
   font-size: 40px;
   color: #ffffff;
+}
+
+.padding {
+  padding: 0 120px;
 }

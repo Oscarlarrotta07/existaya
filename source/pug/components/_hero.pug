@@ -12,9 +12,9 @@ mixin hero(hero, menu)
     h1.hero__voteTitle=hero.name
       span ?
     p.hero__voteText=hero.text
-    a.hero__voteLink(href=hero.link)
-      span.icons.icon-wikipedia
-      =hero.linkText
+    .hero__votewiki
+      span.icons.icon-wikipedia 
+      a.hero__voteLink(href=hero.link)=hero.linkText
     h3.hero__voteQuestion ¿Cuál es su voto?
    .hero__buttons
      button.hero__button.hero__buttonLike

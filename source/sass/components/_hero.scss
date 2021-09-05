@@ -5,12 +5,31 @@
   background-size: cover;
   background-repeat: no-repeat;
 
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(
+      rgba(104, 107, 112, 0.8),
+      rgba(104, 107, 112, 0.3)
+    );
+    width: 100%;
+    height: size(10);
+  }
+
   &__navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: size(9);
     color: $white;
+  }
+
+  &__options {
+    @include latoLight;
+    display: flex;
+    z-index: 1;
   }
 
   &__option {
@@ -21,8 +40,19 @@
   }
 
   &__iconSearch {
-    padding: 0 size(4);
+    padding-left: size(4);
     display: inline;
+    font-size: size(4);
+  }
+
+  .icon-wikipedia {
+    display: inline-block;
+    font-size: size(2.5);
+    margin-right: size();
+  }
+
+  &__votewiki {
+    display: flex;
   }
 
   &__vote {
@@ -47,15 +77,10 @@
   }
 
   &__voteLink {
-    display: block;
     font-size: rem(14);
     margin-bottom: size(2);
     color: $white;
-
-    .icon-wikipedia {
-      font-size: inherit;
-      text-decoration: none;
-    }
+    display: inline-block;
   }
 
   &__voteQuestion {
@@ -86,5 +111,6 @@
 
   &__logo {
     width: 20%;
+    z-index: 1;
   }
 }
