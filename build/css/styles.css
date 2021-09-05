@@ -5,8 +5,9 @@
   width: 100%;
   display: flex;
 }
-.bar__porcentage {
+.bar__percentage {
   padding: 8px 16px;
+  transition: width 0.5s;
 }
 .bar__like {
   background-color: rgba(0, 174, 165, 0.6);
@@ -163,6 +164,12 @@
   color: white;
   padding: 10px 40px;
   text-decoration: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px;
 }
 
 * {

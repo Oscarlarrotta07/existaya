@@ -56,5 +56,31 @@
       "background": "/images/spiderman.png",
       "info": "1 mes atrás <br> en lorem dolor"
     }
-  ]
+  ],
+  "footer": {
+    "links": [
+      {
+        "text": "Terminos y condiciones",
+        "link": "/google.com"
+      },
+      {
+        "text": "Politica de tratamiento de datos",
+        "link": "/google.com"
+      },
+      {
+        "text": "contactenos",
+        "link": "/google.com"
+      }
+    ],
+    "media": [
+      {
+        "name": "facebook",
+        "link": "facebook.com"
+      },
+      {
+        "name": "twitter",
+        "link": "twitter.com"
+      }
+    ]
+  }
 }

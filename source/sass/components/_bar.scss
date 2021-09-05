@@ -5,8 +5,9 @@
   width: 100%;
   display: flex;
 
-  &__porcentage {
+  &__percentage {
     padding: size() size(2);
+    transition: width 0.5s;
   }
 
   &__like {
