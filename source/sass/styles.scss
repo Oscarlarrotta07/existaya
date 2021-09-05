@@ -1,8 +1,32 @@
 @import "components/mixins", "components/variables", "components/bar",
-  "components/hero", "components/icon";
+  "components/hero", "components/icon", "components/card", "components/link",
+  "components/footer";
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  @include lato;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 size(15);
+  gap: size(5);
+}
+
+.title {
+  color: $black;
+  font-size: rem(40);
+  padding: size(8) size(15);
+  @include latoLight;
+}
+
+.icons {
+  font-size: size(5);
+  color: $white;
 }

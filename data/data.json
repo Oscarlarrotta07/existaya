@@ -17,10 +17,70 @@
   },
   "superheros": [
     {
-      "name": "Ironman",
+      "name": "ironman",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
       "linkText": "Más informacion",
-      "link": "/"
+      "link": "/",
+      "background": "/images/ironman.png",
+      "info": "1 mes atrás <br> en lorem dolor"
+    },
+    {
+      "name": "superman",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "linkText": "Más informacion",
+      "link": "/",
+      "background": "/images/superman.png",
+      "info": "1 mes atrás <br> en lorem dolor"
+    },
+    {
+      "name": "thor",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "linkText": "Más informacion",
+      "link": "/",
+      "background": "/images/thor.png",
+      "info": "1 mes atrás <br> en lorem dolor"
+    },
+    {
+      "name": "batman",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "linkText": "Más informacion",
+      "link": "/",
+      "background": "/images/batman.png",
+      "info": "1 mes atrás <br> en lorem dolor"
+    },
+    {
+      "name": "spiderman",
+      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "linkText": "Más informacion",
+      "link": "/",
+      "background": "/images/spiderman.png",
+      "info": "1 mes atrás <br> en lorem dolor"
     }
-  ]
+  ],
+  "footer": {
+    "links": [
+      {
+        "text": "Terminos y condiciones",
+        "link": "/google.com"
+      },
+      {
+        "text": "Politica de tratamiento de datos",
+        "link": "/google.com"
+      },
+      {
+        "text": "contactenos",
+        "link": "/google.com"
+      }
+    ],
+    "media": [
+      {
+        "name": "facebook",
+        "link": "facebook.com"
+      },
+      {
+        "name": "twitter",
+        "link": "twitter.com"
+      }
+    ]
+  }
 }

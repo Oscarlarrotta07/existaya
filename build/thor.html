@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prueba Front</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&amp;display=swap" rel="stylesheet">
+    <link href="https://file.myfontastic.com/sMvuZg4ZcQAYCNfW79DS3R/icons.css" rel="stylesheet">
+  </head>
+</html>
+<body> 
+  <div class="hero" data-name="thor">
+    <nav class="hero__navigation"><img class="hero__logo" src="/images/logo.png" alt="icono heroes"/>
+      <div class="hero__options"><a class="hero__option" href="/">Heroes anteriores</a><a class="hero__option" href="/">¿Cómo funciona?</a><a class="hero__option" href="/">Iniciar sesion</a>
+        <div class="hero__iconSearch icon-search" src="/images/.png" alt=""></div>
+      </div>
+    </nav>
+    <div class="hero__vote">
+      <div class="hero__voteinfo">
+        <p class="hero__voteOpinion">Dínos tu opinión sobre</p>
+        <h1 class="hero__voteTitle">thor<span>?</span></h1>
+        <p class="hero__voteText">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p><a class="hero__voteLink" href="/"><span class="icons icon-wikipedia"></span>Más informacion</a>
+        <h3 class="hero__voteQuestion">¿Cuál es su voto?</h3>
+      </div>
+      <div class="hero__buttons">
+        <button class="hero__button hero__buttonLike">
+          <div class="icons icon-like"></div>
+        </button>
+        <button class="hero__button hero__buttonDislike">
+          <div class="icons icon-dislike"></div>
+        </button>
+      </div>
+    </div>
+    <div class="bar"> 
+      <div class="bar__percentage bar__like" style="width:50%"> 
+        <p class="bar__number bar__numberLike">50%</p>
+      </div>
+      <div class="bar__percentage bar__dislike" style="width:50%">
+        <p class="bar__number bar__numberDislike">50%</p>
+      </div>
+    </div>
+  </div>
+  <h2 class="title">Super Heroes anteriores</h2>
+  <div class="cards">
+    <div class="card" style="background-image:url(/images/ironman.png)" data-name="ironman">
+      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+        <h2 class="card__title">ironman</h2>
+      </div>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
+      <div class="card__cta"><a class="link" href="/ironman.html">Más informacion</a>
+        <p class="card__text">1 mes atrás <br> en lorem dolor </p>
+      </div>
+      <div class="bar"> 
+        <div class="bar__percentage bar__like" style="width:50%"> 
+          <p class="bar__number bar__numberLike">50%</p>
+        </div>
+        <div class="bar__percentage bar__dislike" style="width:50%">
+          <p class="bar__number bar__numberDislike">50%</p>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="background-image:url(/images/superman.png)" data-name="superman">
+      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+        <h2 class="card__title">superman</h2>
+      </div>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
+      <div class="card__cta"><a class="link" href="/superman.html">Más informacion</a>
+        <p class="card__text">1 mes atrás <br> en lorem dolor </p>
+      </div>
+      <div class="bar"> 
+        <div class="bar__percentage bar__like" style="width:50%"> 
+          <p class="bar__number bar__numberLike">50%</p>
+        </div>
+        <div class="bar__percentage bar__dislike" style="width:50%">
+          <p class="bar__number bar__numberDislike">50%</p>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="background-image:url(/images/batman.png)" data-name="batman">
+      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+        <h2 class="card__title">batman</h2>
+      </div>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
+      <div class="card__cta"><a class="link" href="/batman.html">Más informacion</a>
+        <p class="card__text">1 mes atrás <br> en lorem dolor </p>
+      </div>
+      <div class="bar"> 
+        <div class="bar__percentage bar__like" style="width:50%"> 
+          <p class="bar__number bar__numberLike">50%</p>
+        </div>
+        <div class="bar__percentage bar__dislike" style="width:50%">
+          <p class="bar__number bar__numberDislike">50%</p>
+        </div>
+      </div>
+    </div>
+    <div class="card" style="background-image:url(/images/spiderman.png)" data-name="spiderman">
+      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+        <h2 class="card__title">spiderman</h2>
+      </div>
+      <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
+      <div class="card__cta"><a class="link" href="/spiderman.html">Más informacion</a>
+        <p class="card__text">1 mes atrás <br> en lorem dolor </p>
+      </div>
+      <div class="bar"> 
+        <div class="bar__percentage bar__like" style="width:50%"> 
+          <p class="bar__number bar__numberLike">50%</p>
+        </div>
+        <div class="bar__percentage bar__dislike" style="width:50%">
+          <p class="bar__number bar__numberDislike">50%</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="./js/main.js"></script>
+</body>

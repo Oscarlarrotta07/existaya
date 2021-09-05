@@ -3,7 +3,9 @@ mixin meta(title = "Maloka")
   include _icon
   include _scripts
   include _bar
-
+  include _card
+  include _footer
+  
   doctype html
   html(lang="es")
     head
@@ -12,3 +14,7 @@ mixin meta(title = "Maloka")
       meta(name="viewport", content="width=device-width, initial-scale=1.0")
       title="Prueba Front"
       link(rel="stylesheet", href="./css/styles.css")
+      link(rel="preconnect" href="https://fonts.googleapis.com")
+      link(rel="preconnect" href="https://fonts.gstatic.com" crossorigin)
+      link(href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet")
+      link(href="https://file.myfontastic.com/sMvuZg4ZcQAYCNfW79DS3R/icons.css" rel="stylesheet")

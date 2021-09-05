@@ -46,7 +46,7 @@ function compileJs() {
 
 function watchPug() {
   gulp.watch(
-    ["source/pug/**/.pug", "./data/.json"],
+    ["source/pug/**/*.pug", "./data/.json"],
     { ignoreInitial: false },
     compilePug
   );
