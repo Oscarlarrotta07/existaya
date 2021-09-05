@@ -123,9 +123,29 @@
   z-index: 1;
 }
 .hero__vote-like .hero__voteLike {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 .hero__vote-like .hero__voteinfo {
+  display: none;
+}
+.hero__vote-like .hero__buttons {
+  display: none;
+}
+.hero__vote-dislike .hero__voteLike {
+  display: flex;
+  flex-direction: column;
+}
+.hero__vote-dislike .hero__voteLike .icon-like {
+  display: none;
+}
+.hero__vote-dislike .hero__voteLike .icon-dislike {
+  display: block;
+}
+.hero__vote-dislike .hero__voteinfo {
+  display: none;
+}
+.hero__vote-dislike .hero__buttons {
   display: none;
 }
 .hero__voteLike {
@@ -145,10 +165,10 @@
 .hero__iconRegister {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin-bottom: 24px;
 }
 .hero__likeName {
-  padding-bottom: 16px;
+  padding-bottom: 24px;
   font-size: 2.1875rem;
   font-family: "lato", sans-serif;
   font-weight: 300;
@@ -160,9 +180,11 @@
 }
 .hero__likeText {
   width: 80%;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
 }
 .hero__likeButton {
+  width: 30%;
+  cursor: pointer;
   font-size: 0.875rem;
   font-family: "lato", sans-serif;
   font-weight: 400;
@@ -170,6 +192,7 @@
   color: #ffffff;
   border: 1px solid #ffffff;
   background: transparent;
+  margin: 0 auto 64px;
 }
 
 .icon__ico {

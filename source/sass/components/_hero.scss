@@ -117,9 +117,32 @@
 
   &__vote-like {
     .hero__voteLike {
-      display: block;
+      display: flex;
+      flex-direction: column;
     }
     .hero__voteinfo {
+      display: none;
+    }
+    .hero__buttons {
+      display: none;
+    }
+  }
+
+  &__vote-dislike {
+    .hero__voteLike {
+      display: flex;
+      flex-direction: column;
+      .icon-like {
+        display: none;
+      }
+      .icon-dislike {
+        display: block;
+      }
+    }
+    .hero__voteinfo {
+      display: none;
+    }
+    .hero__buttons {
       display: none;
     }
   }
@@ -142,11 +165,11 @@
   &__iconRegister {
     display: flex;
     align-items: center;
-    margin-bottom: size(2);
+    margin-bottom: size(3);
   }
 
   &__likeName {
-    padding-bottom: size(2);
+    padding-bottom: size(3);
     font-size: rem(35);
     @include latoLight;
   }
@@ -158,15 +181,18 @@
 
   &__likeText {
     width: 80%;
-    padding-bottom: size(3);
+    padding-bottom: size(4);
   }
 
   &__likeButton {
+    width: 30%;
+    cursor: pointer;
     font-size: rem(14);
     @include lato;
     padding: size() size(3);
     color: $white;
     border: 1px solid $white;
     background: transparent;
+    margin: 0 auto size(8);
   }
 }
