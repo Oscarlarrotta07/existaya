@@ -20,6 +20,8 @@ Utilicé pug para generar el código HTML, separando cada uno de los componentes
 
 SASS: utilicé este pre-procesador para el manejo de estilos en el proyecto, debido a que ahorra código y se puede ordenar de mejor manera, de la misma manera que pug este tiene cada uno de los estilos por componente dentro de la carpeta sass, siendo styles.scss el archivo principal que llama a los otros.
 
+Utilice dos media screen: `mediamin` y `medialarge` definidas en `variables.scss` para que puedan ser editables directamente.
+
 ### Datos
 
 archivos JSON: para la alimentación de datos utilice el archivo data.json alojado en la carpeta build/data, este archivo contiene la información dinámica como textos, imágenes, backgrounds entre otros del proyecto.

@@ -5,6 +5,10 @@
   padding: size(2);
   background-color: $gray;
 
+  &-hidden {
+    display: none;
+  }
+
   &__subtitle {
     font-size: rem(21);
     @include latoLight;
@@ -25,6 +29,7 @@
     width: 10%;
     background-color: $gray;
     font-size: size(3);
+    cursor: pointer;
   }
 
   @media ($mediamin) {

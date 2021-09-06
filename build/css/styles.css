@@ -432,6 +432,9 @@
   padding: 16px;
   background-color: #ececec;
 }
+.notification-hidden {
+  display: none;
+}
 .notification__subtitle {
   font-size: 1.3125rem;
   font-family: "lato", sans-serif;
@@ -451,6 +454,7 @@
   width: 10%;
   background-color: #ececec;
   font-size: 24px;
+  cursor: pointer;
 }
 @media (min-width:768px) {
   .notification__text {

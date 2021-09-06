@@ -36,7 +36,7 @@
     },
     {
       "name": "thor",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "text": "Thor es uno de los personajes más poderosos en el Universo Cinematográfico de Marvel (UCM)",
       "linkText": "Ver detalle",
       "link": "https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)",
       "background": "/images/thor.png",
@@ -54,7 +54,7 @@
     },
     {
       "name": "spiderman",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "text": "es un personaje creado por los estadounidenses Stan Lee y Steve Ditko, ​​ e introducido en el cómic Amazing Fantasy n° 15",
       "linkText": "Ver detalle",
       "link": "https://en.wikipedia.org/wiki/Spider-Man",
       "background": "/images/spiderman.png",

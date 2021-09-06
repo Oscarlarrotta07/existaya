@@ -104,12 +104,6 @@
         this.dislikes
       ).dislikesPercentage;
 
-      // const { likesPercentage, dislikesPercentage } = getPercetange(
-      //   this.votes,
-      //   this.likes,
-      //   this.dislikes
-      // );
-
       this.$likeBar.style.width = likesPercentage;
       this.$likeBarText.innerHTML = likesPercentage;
       this.$dislikeBar.style.width = dislikesPercentage;
@@ -151,6 +145,28 @@
     }
   }
 
+  class Notification {
+    constructor() {
+      this.$el = document.querySelector(".notification");
+      this.$btn = this.$el.querySelector(".notification__button");
+
+      if (this.$el) {
+        this.addEvents();
+      }
+    }
+
+    addEvents() {
+      const self = this;
+
+      if (this.$btn) {
+        this.$btn.addEventListener("click", function () {
+          self.$el.classList.add("notification-hidden");
+        });
+      }
+    }
+  }
+
+  new Notification();
   new Hero();
   const cards = document.querySelectorAll(".card");
   if (cards) {
