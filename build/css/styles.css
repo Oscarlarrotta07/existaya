@@ -6,6 +6,7 @@
   display: flex;
 }
 .bar__percentage {
+  min-width: 10%;
   padding: 8px 16px;
   transition: width 0.5s;
 }
@@ -30,6 +31,16 @@
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
+  margin-bottom: 32px;
+}
+.hero::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(rgba(104, 107, 112, 0.8), rgba(104, 107, 112, 0.3));
+  width: 100%;
+  height: 80px;
 }
 .hero__navigation {
   display: flex;
@@ -38,6 +49,13 @@
   margin-bottom: 72px;
   color: #ffffff;
 }
+.hero__options {
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+}
 .hero__option {
   color: #ffffff;
   font-size: 1rem;
@@ -45,8 +63,17 @@
   text-decoration: none;
 }
 .hero__iconSearch {
-  padding: 0 32px;
+  padding-left: 32px;
   display: inline;
+  font-size: 32px;
+}
+.hero .icon-wikipedia {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 8px;
+}
+.hero__votewiki {
+  display: flex;
 }
 .hero__vote {
   width: 50%;
@@ -66,14 +93,10 @@
   margin-bottom: 16px;
 }
 .hero__voteLink {
-  display: block;
   font-size: 0.875rem;
   margin-bottom: 16px;
   color: #ffffff;
-}
-.hero__voteLink .icon-wikipedia {
-  font-size: inherit;
-  text-decoration: none;
+  display: inline-block;
 }
 .hero__voteQuestion {
   font-size: 1.25rem;
@@ -98,6 +121,79 @@
 }
 .hero__logo {
   width: 20%;
+  z-index: 1;
+}
+.hero__vote-like .hero__voteLike {
+  display: flex;
+  flex-direction: column;
+}
+.hero__vote-like .hero__voteinfo {
+  display: none;
+}
+.hero__vote-like .hero__buttons {
+  display: none;
+}
+.hero__vote-dislike .hero__voteLike {
+  display: flex;
+  flex-direction: column;
+}
+.hero__vote-dislike .hero__voteLike .icon-like {
+  display: none;
+}
+.hero__vote-dislike .hero__voteLike .icon-dislike {
+  display: block;
+}
+.hero__vote-dislike .hero__voteinfo {
+  display: none;
+}
+.hero__vote-dislike .hero__buttons {
+  display: none;
+}
+.hero__voteLike {
+  display: none;
+  padding: 32px 24px;
+}
+.hero__voteLike .icons {
+  padding: 16px;
+  margin-right: 8px;
+}
+.hero__voteLike .icon-like {
+  background-color: #00aea5;
+}
+.hero__voteLike .icon-dislike {
+  display: none;
+}
+.hero__iconRegister {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.hero__likeName {
+  padding-bottom: 24px;
+  font-size: 2.1875rem;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+}
+.hero__likeRegister {
+  font-size: 1.875rem;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+}
+.hero__likeText {
+  width: 80%;
+  padding-bottom: 32px;
+}
+.hero__likeButton {
+  width: 30%;
+  cursor: pointer;
+  font-size: 0.875rem;
+  font-family: "lato", sans-serif;
+  font-weight: 400;
+  padding: 8px 24px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  background: transparent;
+  margin: 0 auto 64px;
 }
 
 .icon__ico {
@@ -121,9 +217,9 @@
   display: flex;
   align-items: center;
 }
-.card__image {
-  height: 32px;
-  width: 32px;
+.card__icon {
+  font-size: 16px;
+  padding: 8px;
 }
 .card__title {
   font-size: 44px;
@@ -168,8 +264,59 @@
 
 .footer {
   display: flex;
+  align-items: center;
   justify-content: space-between;
-  border-top: 1px;
+  border-top: dotted;
+  padding: 32px 0 160px;
+}
+.footer__links {
+  font-size: 0.75rem;
+}
+.footer__link {
+  color: #000000;
+  padding-right: 24px;
+  text-decoration: none;
+}
+.footer__social {
+  font-size: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+.footer__social .icon-facebook-squared,
+.footer__social .icon-twitter {
+  font-size: 24px;
+  padding-left: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.notification {
+  display: flex;
+  align-items: center;
+  padding: 16px;
+  background-color: #ececec;
+}
+.notification__header {
+  width: 30%;
+}
+.notification__subtitle {
+  font-size: 1.3125rem;
+  font-family: "lato", sans-serif;
+  font-weight: 300;
+}
+.notification__title {
+  font-size: 2.3125rem;
+  font-family: "lato", sans-serif;
+  font-weight: 700;
+}
+.notification__text {
+  font-size: 0.9375rem;
+}
+.notification__button {
+  border: none;
+  width: 5%;
+  background-color: #ececec;
+  font-size: 24px;
 }
 
 * {
@@ -186,14 +333,14 @@ body {
 .cards {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 120px;
+  padding-bottom: 72px;
   gap: 40px;
 }
 
 .title {
   color: #000000;
   font-size: 2.5rem;
-  padding: 64px 120px;
+  padding: 32px 0;
   font-family: "lato", sans-serif;
   font-weight: 300;
 }
@@ -201,4 +348,16 @@ body {
 .icons {
   font-size: 40px;
   color: #ffffff;
+}
+
+.icon-like {
+  background-color: #00aea5;
+}
+
+.icon-dislike {
+  background-color: #ffa300;
+}
+
+.padding {
+  padding: 0 120px;
 }

@@ -13,7 +13,7 @@
   </head>
 </html>
 <body> 
-  <div class="hero" data-name="batman">
+  <div class="hero" data-name="batman" style="background-image:url(/images/batman.png)">
     <nav class="hero__navigation"><img class="hero__logo" src="/images/logo.png" alt="icono heroes"/>
       <div class="hero__options"><a class="hero__option" href="/">Heroes anteriores</a><a class="hero__option" href="/">¿Cómo funciona?</a><a class="hero__option" href="/">Iniciar sesion</a>
         <div class="hero__iconSearch icon-search" src="/images/.png" alt=""></div>
@@ -23,8 +23,19 @@
       <div class="hero__voteinfo">
         <p class="hero__voteOpinion">Dínos tu opinión sobre</p>
         <h1 class="hero__voteTitle">batman<span>?</span></h1>
-        <p class="hero__voteText">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p><a class="hero__voteLink" href="/"><span class="icons icon-wikipedia"></span>Más informacion</a>
+        <p class="hero__voteText">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
+        <div class="hero__votewiki"><span class="icons icon-wikipedia"> </span><a class="hero__voteLink" href="/">Más informacion</a></div>
         <h3 class="hero__voteQuestion">¿Cuál es su voto?</h3>
+      </div>
+      <div class="hero__voteLike"> 
+        <p class="hero__likeName">Marvel - batman</p>
+        <div class="hero__iconRegister">
+          <div class="icons icon-like"></div>
+          <div class="icons icon-dislike"></div>
+          <h2 class="hero__likeRegister">Tu voto ha sido registrado</h2>
+        </div>
+        <p class="hero__likeText">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
+        <button class="hero__likeButton">Volver a votar</button>
       </div>
       <div class="hero__buttons">
         <button class="hero__button hero__buttonLike">
@@ -47,7 +58,8 @@
   <h2 class="title">Super Heroes anteriores</h2>
   <div class="cards">
     <div class="card" style="background-image:url(/images/ironman.png)" data-name="ironman">
-      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+      <div class="card__header">
+        <div class="card__icon icon-like"></div>
         <h2 class="card__title">ironman</h2>
       </div>
       <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
@@ -64,7 +76,8 @@
       </div>
     </div>
     <div class="card" style="background-image:url(/images/superman.png)" data-name="superman">
-      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+      <div class="card__header">
+        <div class="card__icon icon-like"></div>
         <h2 class="card__title">superman</h2>
       </div>
       <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
@@ -81,7 +94,8 @@
       </div>
     </div>
     <div class="card" style="background-image:url(/images/thor.png)" data-name="thor">
-      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+      <div class="card__header">
+        <div class="card__icon icon-dislike"></div>
         <h2 class="card__title">thor</h2>
       </div>
       <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>
@@ -98,7 +112,8 @@
       </div>
     </div>
     <div class="card" style="background-image:url(/images/spiderman.png)" data-name="spiderman">
-      <div class="card__header"><img class="card__image" src="/images/icons/dislike.svg" alt=""/>
+      <div class="card__header">
+        <div class="card__icon icon-like"></div>
         <h2 class="card__title">spiderman</h2>
       </div>
       <p class="card__description">Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames</p>

@@ -1,5 +1,5 @@
 mixin hero(hero, menu)
- .hero(data-name=hero.name)
+ .hero(data-name=hero.name style="background-image:url("+ hero.background + ")")
   nav.hero__navigation
    img.hero__logo(src="/images/logo.png", alt="icono heroes")
    .hero__options
@@ -7,18 +7,27 @@ mixin hero(hero, menu)
       a.hero__option(href=option.link)=option.text
     .hero__iconSearch.icon-search(src="/images/.png", alt="")
   .hero__vote
-   .hero__voteinfo
-    p.hero__voteOpinion Dínos tu opinión sobre
-    h1.hero__voteTitle=hero.name
-      span ?
-    p.hero__voteText=hero.text
-    a.hero__voteLink(href=hero.link)
-      span.icons.icon-wikipedia
-      =hero.linkText
-    h3.hero__voteQuestion ¿Cuál es su voto?
-   .hero__buttons
-     button.hero__button.hero__buttonLike
-      .icons.icon-like
-     button.hero__button.hero__buttonDislike
-      .icons.icon-dislike
+    .hero__voteinfo
+      p.hero__voteOpinion Dínos tu opinión sobre
+      h1.hero__voteTitle=hero.name
+        span ?
+      p.hero__voteText=hero.text
+      .hero__votewiki
+        span.icons.icon-wikipedia 
+        a.hero__voteLink(href=hero.link)=hero.linkText
+      h3.hero__voteQuestion ¿Cuál es su voto?
+    .hero__voteLike 
+        p.hero__likeName="Marvel - " + hero.name
+        .hero__iconRegister
+          .icons.icon-like
+          .icons.icon-dislike
+          h2.hero__likeRegister Tu voto ha sido registrado
+        p.hero__likeText=hero.text
+        button.hero__likeButton Volver a votar
+
+    .hero__buttons
+      button.hero__button.hero__buttonLike
+        .icons.icon-like
+      button.hero__button.hero__buttonDislike
+        .icons.icon-dislike
   +bar()

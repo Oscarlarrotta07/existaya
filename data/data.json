@@ -22,7 +22,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/ironman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "like"
     },
     {
       "name": "superman",
@@ -30,7 +31,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/superman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "like"
     },
     {
       "name": "thor",
@@ -38,7 +40,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/thor.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "dislike"
     },
     {
       "name": "batman",
@@ -46,7 +49,8 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/batman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "dislike"
     },
     {
       "name": "spiderman",
@@ -54,10 +58,13 @@
       "linkText": "Más informacion",
       "link": "/",
       "background": "/images/spiderman.png",
-      "info": "1 mes atrás <br> en lorem dolor"
+      "info": "1 mes atrás <br> en lorem dolor",
+      "icon": "like"
     }
   ],
   "footer": {
+    "facebook": "facebook.com",
+    "twitter": "twitter.com",
     "links": [
       {
         "text": "Terminos y condiciones",
@@ -71,16 +78,11 @@
         "text": "contactenos",
         "link": "/google.com"
       }
-    ],
-    "media": [
-      {
-        "name": "facebook",
-        "link": "facebook.com"
-      },
-      {
-        "name": "twitter",
-        "link": "twitter.com"
-      }
     ]
+  },
+  "notification": {
+    "subtitle": "lorem ipsum Dolor",
+    "title": "IP lorem ip. ",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla nisi. Suspendisse vel nulla non ipsum volutpat fermentum et a velit. Nullam nunc massa, ultricies sed purus viverra, congue tristique diam. "
   }
 }

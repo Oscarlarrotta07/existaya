@@ -28,6 +28,7 @@
         this.$dislikeBar = this.$el.querySelector(".bar__dislike");
         this.$dislikeBarText = this.$dislikeBar.querySelector(".bar__number");
         this.$voteEl = this.$el.querySelector(".hero__vote");
+        this.$voteLike = this.$el.querySelector(".hero__likeButton");
 
         const persistedData = JSON.parse(localStorage.getItem(this.name)) || {};
         this.likes = persistedData.likes || 0;
@@ -59,6 +60,15 @@
           self.updateBar();
           self.$voteEl.classList.add("hero__vote-dislike");
           self.persistHero();
+        });
+      }
+
+      if (this.$voteLike) {
+        this.$voteLike.addEventListener("click", function () {
+          self.$voteEl.classList.remove(
+            "hero__vote-like",
+            "hero__vote-dislike"
+          );
         });
       }
     }

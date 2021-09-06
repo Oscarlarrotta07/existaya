@@ -1,0 +1,31 @@
+.notification {
+  display: flex;
+  align-items: center;
+  padding: size(2);
+  background-color: $gray;
+
+  &__header {
+    width: 30%;
+  }
+
+  &__subtitle {
+    font-size: rem(21);
+    @include latoLight;
+  }
+
+  &__title {
+    font-size: rem(37);
+    @include latoBold;
+  }
+
+  &__text {
+    font-size: rem(15);
+  }
+
+  &__button {
+    border: none;
+    width: 5%;
+    background-color: $gray;
+    font-size: size(3);
+  }
+}
