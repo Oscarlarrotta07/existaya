@@ -16,7 +16,6 @@
 
   class Hero {
     constructor() {
-      console.log("hero");
       this.$el = document.querySelector(".hero");
 
       if (this.$el) {

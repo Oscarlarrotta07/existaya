@@ -18,18 +18,18 @@
   "superheros": [
     {
       "name": "ironman",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "text": "Iron Man es un superhéroe que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje fue cocreado por el escritor y editor Stan Lee",
       "linkText": "Ver detalle",
-      "link": "/",
+      "link": "https://en.wikipedia.org/wiki/Iron_Man",
       "background": "/images/ironman.png",
       "info": "1 mes atrás <br> en lorem dolor",
       "icon": "like"
     },
     {
       "name": "superman",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "text": "Clark Joseph Kent, también conocido por su nombre de nacimiento Kal-El o por su nombre de superhéroe Superman, es un personaje ficticio y superhéroe ",
       "linkText": "Ver detalle",
-      "link": "/",
+      "link": "https://en.wikipedia.org/wiki/Superman",
       "background": "/images/superman.png",
       "info": "1 mes atrás <br> en lorem dolor",
       "icon": "like"
@@ -38,16 +38,16 @@
       "name": "thor",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
       "linkText": "Ver detalle",
-      "link": "/",
+      "link": "https://en.wikipedia.org/wiki/Thor_(Marvel_Comics)",
       "background": "/images/thor.png",
       "info": "1 mes atrás <br> en lorem dolor",
       "icon": "dislike"
     },
     {
       "name": "batman",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "text": "Batman es un personaje de cómic creado por los estadounidenses Bob Kane y Bill Finger, ​ y propiedad de DC Comics.",
       "linkText": "Ver detalle",
-      "link": "/",
+      "link": "https://en.wikipedia.org/wiki/Batman",
       "background": "/images/batman.png",
       "info": "1 mes atrás <br> en lorem dolor",
       "icon": "dislike"
@@ -56,7 +56,7 @@
       "name": "spiderman",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
       "linkText": "Ver detalle",
-      "link": "/",
+      "link": "https://en.wikipedia.org/wiki/Spider-Man",
       "background": "/images/spiderman.png",
       "info": "1 mes atrás <br> en lorem dolor",
       "icon": "like"
@@ -67,22 +67,22 @@
     "twitter": "twitter.com",
     "links": [
       {
-        "text": "Terminos y condiciones",
-        "link": "/google.com"
+        "text": "Términos y condiciones",
+        "link": "google.com"
       },
       {
-        "text": "Politica de tratamiento de datos",
-        "link": "/google.com"
+        "text": "Política de tratamiento de datos",
+        "link": "google.com"
       },
       {
-        "text": "contactenos",
-        "link": "/google.com"
+        "text": "Contáctenos",
+        "link": "google.com"
       }
     ]
   },
   "notification": {
-    "subtitle": "lorem ipsum Dolor",
-    "title": "IP lorem ip. ",
-    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sed fringilla nisi. Suspendisse vel nulla non ipsum volutpat fermentum et a velit. Nullam nunc massa, ultricies sed purus viverra, congue tristique diam. "
+    "subtitle": "Dinos cual es",
+    "title": "Tu superhéroe ",
+    "text": "Un superhéroe es un personaje de ficción cuyas características superan las del héroe clásico, generalmente con poderes sobrehumanos aunque no necesariamente, y entroncado con la ciencia ficción. Generados a finales de los años 1930 en la industria del comic book estadounidense "
   }
 }
