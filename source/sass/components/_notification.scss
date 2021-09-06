@@ -38,4 +38,10 @@
       width: 5%;
     }
   }
+
+  @media ($medialarge) {
+    &__text {
+      width: 70%;
+    }
+  }
 }

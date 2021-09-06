@@ -227,6 +227,10 @@
     padding: size(3) size(15) size(15);
     background-position: initial;
 
+    &__navigation {
+      flex-direction: row;
+    }
+
     &__vote {
       width: 60%;
     }
