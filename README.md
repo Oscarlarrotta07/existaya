@@ -4,9 +4,9 @@ A continuación describiré la manera en que realice el proyecto, espero les gus
 
 ## Arquitectura
 
-Inicialmente realice el setup del proyecto, instalando las dependencias y realizando los scripts mostrados en package.json, el proyecto tiene 3 carpetas principales: build, data y source; en donde build están alojados todos los documentos renderizados de css y html y js
+Inicialmente realice el setup del proyecto, instalando las dependencias y realizando los scripts mostrados en package.json, el proyecto tiene 3 carpetas principales: build, data y source; en donde build están alojados todos los documentos renderizados de css y html y js.
 
-La carpeta data almacena el archivo que alimenta la información de la página,source almacena todos los pug y scss de cada uno de los componentes y el archivo principal de javascript donde se ejecuta toda la interactividad de votos.
+La carpeta data almacena el archivo que alimenta la información dinámica de la página y source almacena todos los pug y scss de cada uno de los componentes ademas del archivo principal de javascript donde se ejecuta toda la interactividad de votos.
 
 ### Gulp
 
