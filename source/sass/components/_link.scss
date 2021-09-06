@@ -1,6 +1,13 @@
 .link {
   border: 1px solid;
   color: white;
-  padding: 10px 40px;
+  padding: size() size(5);
   text-decoration: none;
+
+  @media ($mediamin) {
+    padding: size();
+  }
+  @media ($medialarge) {
+    padding: size() size(4);
+  }
 }

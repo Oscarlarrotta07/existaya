@@ -6,13 +6,15 @@
   display: flex;
 
   &__percentage {
-    min-width: 10%;
+    min-width: 30%;
     padding: size() size(2);
     transition: width 0.5s;
+    display: flex;
   }
 
   &__like {
     background-color: $greentransparent;
+    justify-content: flex-end;
   }
 
   &__dislike {
@@ -20,12 +22,49 @@
   }
 
   &__number {
-    font-size: rem(48);
+    font-size: rem(24);
     color: $white;
     line-height: 1;
+    display: flex;
 
     &Like {
-      text-align: end;
+      &::before {
+        padding: 0 size();
+        content: "\62";
+        font-family: "exista-icons" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+
+    &Dislike {
+      &::after {
+        padding: 0 size();
+        content: "\61";
+        font-family: "exista-icons" !important;
+        font-style: normal !important;
+        font-weight: normal !important;
+        font-variant: normal !important;
+        text-transform: none !important;
+        line-height: 1;
+        -webkit-font-smoothing: antialiased;
+      }
+    }
+  }
+
+  @media ($mediamin) {
+    &__number {
+      font-size: rem(30);
+    }
+  }
+
+  @media ($medialarge) {
+    &__number {
+      font-size: rem(48);
     }
   }
 }

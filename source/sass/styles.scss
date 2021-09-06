@@ -13,22 +13,32 @@ body {
 }
 
 .cards {
-  display: flex;
-  flex-wrap: wrap;
-  padding-bottom: size(9);
-  gap: size(5);
+  @media ($mediamin) {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: size(9);
+    gap: size(5);
+  }
 }
 
 .title {
   color: $black;
-  font-size: rem(40);
+  font-size: rem(30);
   padding: size(4) 0;
   @include latoLight;
+
+  @media ($mediamin) {
+    font-size: rem(40);
+  }
 }
 
 .icons {
-  font-size: size(5);
+  font-size: size(3);
   color: $white;
+
+  @media ($mediamin) {
+    font-size: size(5);
+  }
 }
 
 .icon-like {
@@ -40,5 +50,10 @@ body {
 }
 
 .padding {
-  padding: 0 size(15);
+  max-width: $size-max-width;
+  margin: 0 auto;
+
+  @media ($mediamin) {
+    padding: 0 size(15);
+  }
 }

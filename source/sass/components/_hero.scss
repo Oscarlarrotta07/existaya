@@ -1,10 +1,12 @@
 .hero {
-  padding: size(3) size(15) size(15);
-  background-image: url("/images/ironman.png");
+  padding: size(3) size(2) size(15);
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: size(4);
+  max-width: $size-max-width;
+  margin: 0 auto size(4);
+  background-position: right;
 
   &::before {
     content: "";
@@ -13,7 +15,7 @@
     top: 0;
     background: linear-gradient(
       rgba(104, 107, 112, 0.8),
-      rgba(104, 107, 112, 0.3)
+      rgba(104, 107, 112, 0.01)
     );
     width: 100%;
     height: size(10);
@@ -21,6 +23,7 @@
 
   &__navigation {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     margin-bottom: size(9);
@@ -30,6 +33,7 @@
   &__options {
     @include latoLight;
     display: flex;
+    flex-direction: column;
     z-index: 1;
     align-items: center;
   }
@@ -42,7 +46,6 @@
   }
 
   &__iconSearch {
-    padding-left: size(4);
     display: inline;
     font-size: size(4);
   }
@@ -58,7 +61,6 @@
   }
 
   &__vote {
-    width: 50%;
     color: $white;
     backdrop-filter: blur(size(2));
     background: rgba(0, 0, 0, 0.4);
@@ -69,7 +71,7 @@
   }
 
   &__voteTitle {
-    font-size: rem(60);
+    font-size: rem(45);
     margin-bottom: size(3);
   }
 
@@ -96,7 +98,7 @@
 
   &__button {
     cursor: pointer;
-    padding: size(3);
+    padding: size(1);
     width: 100%;
     display: block;
     appearance: none;
@@ -112,7 +114,6 @@
   }
 
   &__logo {
-    width: 20%;
     z-index: 1;
   }
 
@@ -186,7 +187,7 @@
   }
 
   &__likeButton {
-    width: 30%;
+    width: 60%;
     cursor: pointer;
     font-size: rem(14);
     @include lato;
@@ -194,6 +195,50 @@
     color: $white;
     border: 1px solid $white;
     background: transparent;
-    margin: 0 auto size(8);
+    margin: 0 auto size(2);
+  }
+
+  @media ($mediamin) {
+    padding: size(3) size(15) size(15);
+
+    &__options {
+      flex-direction: row;
+    }
+
+    &__iconSearch {
+      padding-left: size(4);
+    }
+
+    &__vote {
+      width: 80%;
+    }
+
+    &__button {
+      padding: size(3);
+    }
+
+    &__likeButton {
+      width: 60%;
+      margin: 0 auto size(6.5);
+    }
+  }
+
+  @media ($medialarge) {
+    padding: size(3) size(15) size(15);
+    background-position: initial;
+
+    &__vote {
+      width: 60%;
+    }
+
+    &__voteTitle {
+      font-size: rem(60);
+      margin-bottom: size(3);
+    }
+
+    &__likeButton {
+      width: 40%;
+      margin: 0 auto size(9);
+    }
   }
 }

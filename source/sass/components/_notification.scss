@@ -1,12 +1,9 @@
 .notification {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: size(2);
   background-color: $gray;
-
-  &__header {
-    width: 30%;
-  }
 
   &__subtitle {
     font-size: rem(21);
@@ -19,13 +16,26 @@
   }
 
   &__text {
+    display: none;
     font-size: rem(15);
   }
 
   &__button {
     border: none;
-    width: 5%;
+    width: 10%;
     background-color: $gray;
     font-size: size(3);
+  }
+
+  @media ($mediamin) {
+    &__text {
+      display: block;
+      font-size: rem(15);
+      width: 50%;
+    }
+
+    &__button {
+      width: 5%;
+    }
   }
 }
