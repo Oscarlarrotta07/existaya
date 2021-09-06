@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  border-top: dotted;
+  border-top: 2px dotted $gray;
   padding: size(4) 0;
 
   &__links {

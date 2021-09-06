@@ -6,8 +6,7 @@
   display: flex;
 
   &__percentage {
-    min-width: 30%;
-    padding: size() size(2);
+    padding: size() 0;
     transition: width 0.5s;
     display: flex;
   }
@@ -26,6 +25,7 @@
     color: $white;
     line-height: 1;
     display: flex;
+    margin: 0 size(2);
 
     &Like {
       &::before {
