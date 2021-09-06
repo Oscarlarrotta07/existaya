@@ -3,13 +3,13 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: calc(50% - #{size(2.5)});
   color: #ffffff;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   justify-content: flex-end;
   padding-bottom: size(10);
+  margin-bottom: size(4);
 
   &__header {
     display: flex;
@@ -57,7 +57,28 @@
     }
 
     &__number {
-      font-size: rem(30);
+      font-size: rem(15);
+    }
+  }
+
+  @media ($mediamin) {
+    width: calc(50% - #{size(2.5)});
+
+    .bar {
+      &__number {
+        font-size: rem(30);
+      }
+    }
+
+    &__cta {
+      flex-direction: column;
+      align-content: center;
+    }
+
+    &__text {
+      padding: size();
+      width: 100%;
+      text-align: center;
     }
   }
 }

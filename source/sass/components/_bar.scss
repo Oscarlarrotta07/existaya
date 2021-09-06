@@ -6,7 +6,7 @@
   display: flex;
 
   &__percentage {
-    min-width: 10%;
+    min-width: 20%;
     padding: size() size(2);
     transition: width 0.5s;
   }
@@ -20,12 +20,24 @@
   }
 
   &__number {
-    font-size: rem(48);
+    font-size: rem(24);
     color: $white;
     line-height: 1;
 
     &Like {
       text-align: end;
+    }
+  }
+
+  @media ($mediamin) {
+    &__number {
+      font-size: rem(48);
+    }
+  }
+
+  @media ($medialarge) {
+    &__percentage {
+      min-width: 10%;
     }
   }
 }
