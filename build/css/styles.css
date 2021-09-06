@@ -288,6 +288,7 @@
   justify-content: flex-end;
   padding-bottom: 80px;
   margin-bottom: 32px;
+  overflow: hidden;
 }
 .card__header {
   display: flex;
@@ -513,12 +514,12 @@ body {
   background-color: #ffa300;
 }
 
-.padding {
+.wrapper {
   max-width: 1300px;
   margin: 0 auto;
 }
 @media (min-width:768px) {
-  .padding {
+  .wrapper {
     padding: 0 120px;
   }
 }

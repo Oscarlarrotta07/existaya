@@ -18,7 +18,7 @@
   "superheros": [
     {
       "name": "ironman",
-      "text": "Iron Man es un superhéroe que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje fue cocreado por el escritor y editor Stan Lee, desarrollado por el guionista Larry Lieber y diseñado por los artistas Don Heck y Jack Kirby",
+      "text": "Iron Man es un superhéroe que aparece en los cómics estadounidenses publicados por Marvel Comics. El personaje fue cocreado por el escritor y editor Stan Lee",
       "linkText": "Ver detalle",
       "link": "https://en.wikipedia.org/wiki/Iron_Man",
       "background": "/images/ironman.png",
@@ -27,7 +27,7 @@
     },
     {
       "name": "superman",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "text": "Clark Joseph Kent, también conocido por su nombre de nacimiento Kal-El o por su nombre de superhéroe Superman, es un personaje ficticio y superhéroe ",
       "linkText": "Ver detalle",
       "link": "https://en.wikipedia.org/wiki/Superman",
       "background": "/images/superman.png",
@@ -45,7 +45,7 @@
     },
     {
       "name": "batman",
-      "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
+      "text": "Batman es un personaje de cómic creado por los estadounidenses Bob Kane y Bill Finger, ​ y propiedad de DC Comics.",
       "linkText": "Ver detalle",
       "link": "https://en.wikipedia.org/wiki/Batman",
       "background": "/images/batman.png",
