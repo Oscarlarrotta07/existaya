@@ -2,6 +2,10 @@
 
 A continuación describiré la manera en que realice el proyecto, espero les guste
 
+## ¿Cómo correr el proyecto?
+
+Para correr el proyecto se usan npm scripts, para compilar todos los assets dentro de la carpeta `/build` se debe correr `npm run dev`. Una vez creados todos los archivos HTML, JS y CSS se debe levantar un servidor local con `npm run serve` e ir a la URL `http://localhost:8080/`. La página `index.html` no contiene el componente Hero ya que solo muestra la lista de todos los superheroes, al hacer click en el card de cada superheroe ya se puede ver el detalle con todos los componentes.
+
 ## Arquitectura
 
 Inicialmente realice el setup del proyecto, instalando las dependencias y realizando los scripts mostrados en package.json, el proyecto tiene 3 carpetas principales:`build`, `data` y `source`; en donde `build` están alojados todos los documentos renderizados de css y html y js.
@@ -20,7 +24,7 @@ Utilicé pug para generar el código HTML, separando cada uno de los componentes
 
 SASS: utilicé este pre-procesador para el manejo de estilos en el proyecto, debido a que ahorra código y se puede ordenar de mejor manera, de la misma manera que pug este tiene cada uno de los estilos por componente dentro de la carpeta sass, siendo styles.scss el archivo principal que llama a los otros.
 
-Utilice dos media screen: `mediamin` y `medialarge` definidas en `variables.scss` para que puedan ser editables directamente.
+Utilicé dos media screen: `mediamin` y `medialarge` definidas en `variables.scss` para que puedan ser editables directamente.
 
 ### Datos
 

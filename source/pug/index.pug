@@ -1,0 +1,13 @@
+include components/_meta
+
++meta() 
+body 
+ .wrapper
+   +notification(data.notification)
+   h2.title Super Heroes anteriores
+   .cards
+      each superhero in data.superheros
+        +card(superhero)
+   +footer(data.footer)
+ +scripts() 
+ 
