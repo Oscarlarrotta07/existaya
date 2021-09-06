@@ -66,7 +66,7 @@
 
     .bar {
       &__number {
-        font-size: rem(30);
+        font-size: rem(15);
       }
     }
 
@@ -79,6 +79,25 @@
       padding: size();
       width: 100%;
       text-align: center;
+    }
+  }
+
+  @media ($medialarge) {
+    &__cta {
+      flex-direction: row;
+      align-items: center;
+    }
+
+    &__text {
+      padding: 0;
+      width: 40%;
+      text-align: end;
+    }
+
+    .bar {
+      &__number {
+        font-size: rem(30);
+      }
     }
   }
 }

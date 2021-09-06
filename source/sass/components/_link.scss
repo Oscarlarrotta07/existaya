@@ -7,4 +7,7 @@
   @media ($mediamin) {
     padding: size();
   }
+  @media ($medialarge) {
+    padding: size() size(4);
+  }
 }

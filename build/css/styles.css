@@ -6,12 +6,14 @@
   display: flex;
 }
 .bar__percentage {
-  min-width: 20%;
+  min-width: 30%;
   padding: 8px 16px;
   transition: width 0.5s;
+  display: flex;
 }
 .bar__like {
   background-color: rgba(0, 174, 165, 0.6);
+  justify-content: flex-end;
 }
 .bar__dislike {
   background-color: rgba(255, 163, 0, 0.6);
@@ -20,18 +22,38 @@
   font-size: 1.5rem;
   color: #ffffff;
   line-height: 1;
+  display: flex;
 }
-.bar__numberLike {
-  text-align: end;
+.bar__numberLike::before {
+  padding: 0 8px;
+  content: "b";
+  font-family: "exista-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.bar__numberDislike::after {
+  padding: 0 8px;
+  content: "a";
+  font-family: "exista-icons" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
 }
 @media (min-width:768px) {
   .bar__number {
-    font-size: 3rem;
+    font-size: 1.875rem;
   }
 }
-@media (min-width:1129px) {
-  .bar__percentage {
-    min-width: 10%;
+@media (min-width:1000px) {
+  .bar__number {
+    font-size: 3rem;
   }
 }
 
@@ -195,7 +217,7 @@
   padding-bottom: 32px;
 }
 .hero__likeButton {
-  width: 30%;
+  width: 60%;
   cursor: pointer;
   font-size: 0.875rem;
   font-family: "lato", sans-serif;
@@ -204,7 +226,7 @@
   color: #ffffff;
   border: 1px solid #ffffff;
   background: transparent;
-  margin: 0 auto 64px;
+  margin: 0 auto 16px;
 }
 @media (min-width:768px) {
   .hero {
@@ -222,8 +244,12 @@
   .hero__button {
     padding: 24px;
   }
+  .hero__likeButton {
+    width: 60%;
+    margin: 0 auto 52px;
+  }
 }
-@media (min-width:1129px) {
+@media (min-width:1000px) {
   .hero {
     padding: 24px 120px 120px;
     background-position: initial;
@@ -234,6 +260,10 @@
   .hero__voteTitle {
     font-size: 3.75rem;
     margin-bottom: 24px;
+  }
+  .hero__likeButton {
+    width: 40%;
+    margin: 0 auto 72px;
   }
 }
 
@@ -300,7 +330,7 @@
     width: calc(50% - 20px);
   }
   .card .bar__number {
-    font-size: 1.875rem;
+    font-size: 0.9375rem;
   }
   .card__cta {
     flex-direction: column;
@@ -310,6 +340,20 @@
     padding: 8px;
     width: 100%;
     text-align: center;
+  }
+}
+@media (min-width:1000px) {
+  .card__cta {
+    flex-direction: row;
+    align-items: center;
+  }
+  .card__text {
+    padding: 0;
+    width: 40%;
+    text-align: end;
+  }
+  .card .bar__number {
+    font-size: 1.875rem;
   }
 }
 
@@ -322,6 +366,11 @@
 @media (min-width:768px) {
   .link {
     padding: 8px;
+  }
+}
+@media (min-width:1000px) {
+  .link {
+    padding: 8px 32px;
   }
 }
 
@@ -363,7 +412,7 @@
     font-size: 0.75rem;
   }
 }
-@media (min-width:1129px) {
+@media (min-width:1000px) {
   .footer__links {
     font-size: 0.75rem;
   }

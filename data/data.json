@@ -19,7 +19,7 @@
     {
       "name": "ironman",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
-      "linkText": "Más informacion",
+      "linkText": "Ver detalle",
       "link": "/",
       "background": "/images/ironman.png",
       "info": "1 mes atrás <br> en lorem dolor",
@@ -28,7 +28,7 @@
     {
       "name": "superman",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
-      "linkText": "Más informacion",
+      "linkText": "Ver detalle",
       "link": "/",
       "background": "/images/superman.png",
       "info": "1 mes atrás <br> en lorem dolor",
@@ -37,7 +37,7 @@
     {
       "name": "thor",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
-      "linkText": "Más informacion",
+      "linkText": "Ver detalle",
       "link": "/",
       "background": "/images/thor.png",
       "info": "1 mes atrás <br> en lorem dolor",
@@ -46,7 +46,7 @@
     {
       "name": "batman",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
-      "linkText": "Más informacion",
+      "linkText": "Ver detalle",
       "link": "/",
       "background": "/images/batman.png",
       "info": "1 mes atrás <br> en lorem dolor",
@@ -55,7 +55,7 @@
     {
       "name": "spiderman",
       "text": "Lorem ipsum dolor sit amet consectetur adipiscing elit et conubia dictumst, varius aenean suscipit cubilia purus magna facilisi nisl dapibus fames",
-      "linkText": "Más informacion",
+      "linkText": "Ver detalle",
       "link": "/",
       "background": "/images/spiderman.png",
       "info": "1 mes atrás <br> en lorem dolor",
