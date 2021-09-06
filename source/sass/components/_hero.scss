@@ -31,6 +31,7 @@
     @include latoLight;
     display: flex;
     z-index: 1;
+    align-items: center;
   }
 
   &__option {
