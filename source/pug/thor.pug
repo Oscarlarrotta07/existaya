@@ -3,10 +3,13 @@ include components/_meta
 +meta() 
 body 
  +hero(data.superheros[2], data.menu)
- h2.title Super Heroes anteriores
- .cards
-  each superhero in data.superheros
-   if superhero.name != "thor"
-    +card(superhero)
+ .padding
+   +notification(data.notification)
+   h2.title Super Heroes anteriores
+   .cards
+      each superhero in data.superheros
+         if superhero.name != "thor"
+            +card(superhero)
+   +footer(data.footer)
  +scripts() 
  

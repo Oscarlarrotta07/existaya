@@ -27,11 +27,12 @@
 
 .hero {
   padding: 24px 120px 120px;
-  background-image: url("/images/ironman.png");
   position: relative;
   background-size: cover;
   background-repeat: no-repeat;
   margin-bottom: 32px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
 .hero::before {
   content: "";
@@ -360,4 +361,6 @@ body {
 
 .padding {
   padding: 0 120px;
+  max-width: 1300px;
+  margin: 0 auto;
 }
